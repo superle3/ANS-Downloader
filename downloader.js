@@ -22,7 +22,7 @@ function download() {
     var generalAnswers = document.querySelectorAll('.quiz-panel')
 
     if (pdfIframe != null && !pdfIframe.parentElement.classList.contains('d-none')) {
-        pdfIframe.contentDocument.getElementById('download').click();
+        pdfIframe.contentDocument.getElementById('downloadButton').click();
     } else if (generalAnswers != null && generalAnswers.length >= 1) {
         for (let i = 0; i < generalAnswers.length; i++) {
             alert("Rendering pdf, this might take a while")
